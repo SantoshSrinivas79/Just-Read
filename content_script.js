@@ -1098,7 +1098,9 @@ function createSimplifiedOverlay() {
 
     // The print button
     simpleArticleIframe.querySelector(".simple-print").addEventListener('click', function() {
-        simpleArticleIframe.defaultView.print();
+        // simpleArticleIframe.defaultView.print();
+        console.log("Printing");
+        console.log(simpleArticleIframe.querySelector('.content-container'));
     });
 
     // The deletion mode button
